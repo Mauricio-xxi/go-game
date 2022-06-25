@@ -29,18 +29,22 @@ func (mover *keyboardMover) onUpdate() error {
 	if keys[sdl.SCANCODE_LEFT] == 1 {
 		// move left
 		if cont.position.x-(mover.sr.width/2.0) > 0 {
-			cont.position.x -= mover.speed
+			cont.position.x -= mover.speed * delta
 		}
 	} else if keys[sdl.SCANCODE_RIGHT] == 1 {
 		// move right
 		if cont.position.x+(mover.sr.width/2.0) < screenWidth {
-			cont.position.x += mover.speed
+			cont.position.x += mover.speed * delta
 		}
 	}
 	return nil
 }
 
 func (mover *keyboardMover) onDraw(renderer *sdl.Renderer) error {
+	return nil
+}
+
+func (mover *keyboardMover) onCollision(other *element) error {
 	return nil
 }
 
@@ -71,6 +75,10 @@ func (mover *keyboardShooter) onUpdate() error {
 }
 
 func (mover *keyboardShooter) onDraw(renderer *sdl.Renderer) error {
+	return nil
+}
+
+func (mover *keyboardShooter) onCollision(other *element) error {
 	return nil
 }
 
