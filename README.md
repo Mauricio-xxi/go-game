@@ -1,7 +1,17 @@
 # My go game
 
-![image info](./readme-files/go-playing.jpg){ width:50px }
+<img src="./readme-files/go-playing.jpg" alt="golang" title="golang gaming" height="100"/>
 
-a mini game made with golang with the Component-based Architecture
+a mini game made with golang with:
 
-![image info](./readme-files/captura_go_game.png){ width:150px }
+- Component-based Architecture
+- Hardware-independent physics
+- Sprites animations
+- Keyboard event detection
+
+![image info](./readme-files/captura_go_game.png)
+
+## How to run
+
+- go build (to compile)
+- ./go-game (to execute)

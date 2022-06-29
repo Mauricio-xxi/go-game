@@ -9,7 +9,7 @@ import (
 
 const (
 	screenWidth  = 600
-	screenHeight = 600
+	screenHeight = 800
 
 	targetTicksPerSecond = 60
 )
